@@ -1,0 +1,6 @@
+{
+  "name": "Royal Boys and Girls PG – Bengaluru",
+  "description": "Modern, premium PG accommodation near Acharya Institute, Soladevanahalli, Bengaluru with separate wings for boys and girls, Wi-Fi, home-style meals, and 24/7 security.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

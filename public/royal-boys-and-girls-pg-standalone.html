@@ -1,0 +1,2261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- ==========================================================================
+       EDIT HERE: BASIC SEO & SOCIAL META TAGS
+       ========================================================================== -->
+  <title>Royal Boys and Girls PG – PG in Soladevanahalli, Bengaluru near Acharya Institute</title>
+  <meta name="description" content="Premium Paying Guest (PG) accommodation in Soladevanahalli, Bengaluru near Acharya Institute. Separate boys & girls sections, delicious home-style food, high-speed Wi-Fi, CCTV security & 24/7 power backup.">
+  <meta name="keywords" content="Royal Boys and Girls PG, PG near Acharya Institute, PG in Soladevanahalli, Bangalore PG, student accommodation Soladevanahalli">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Royal Boys and Girls PG – PG in Soladevanahalli, Bengaluru near Acharya Institute">
+  <meta property="og:description" content="Your Comfortable Home Away From Home. High quality rooms, 3-times tasty meals, high-speed Wi-Fi, laundry, and 24/7 security. Just 3 mins walk from Acharya Institute.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Google Fonts: Elegant Serif (Cinzel / Playfair) + Clean Modern Sans (Plus Jakarta Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- ==========================================================================
+       EDIT HERE: LOCALBUSINESS SCHEMA MARKUP (FOR GOOGLE SEARCH ENGINE RANKINGS)
+       ========================================================================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LodgingBusiness",
+    "name": "Royal Boys and Girls PG",
+    "description": "Paying Guest accommodation for students and professionals near Acharya Institute, Soladevanahalli, Bengaluru.",
+    "telephone": "+919606338697",
+    "email": "royalboysgirlspg@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "3rd Main Cottage Road, 5th Cross Rd, Achit Nagar, MSPP Colony",
+      "addressLocality": "Soladevanahalli, Bengaluru",
+      "addressRegion": "Karnataka",
+      "postalCode": "560107",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 13.0827,
+      "longitude": 77.4878
+    },
+    "hasMap": "https://maps.google.com/?q=3FRP%2BJ5+Soladevanahalli%2C+Karnataka",
+    "priceRange": "₹₹",
+    "currenciesAccepted": "INR"
+  }
+  </script>
+
+  <!-- Supabase Client CDN (for backend integration without build step) -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  <!-- ==========================================================================
+       INLINE STYLES (ROYAL NAVY & GOLD THEME, FULLY RESPONSIVE, NO BUILD STEP)
+       ========================================================================== -->
+  <style>
+    :root {
+      --bg-main: #080E1A;
+      --bg-surface: #0B1528;
+      --bg-surface-elevated: #0F1C36;
+      --gold-primary: #D4AF37;
+      --gold-light: #F3C623;
+      --gold-dark: #A67C1E;
+      --text-main: #F1F5F9;
+      --text-muted: #94A3B8;
+      --border-subtle: rgba(212, 175, 55, 0.2);
+      --border-dark: #1E293B;
+      --green-whatsapp: #25D366;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      background-color: var(--bg-main);
+      color: var(--text-main);
+    }
+
+    body {
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    h1, h2, h3, .font-serif {
+      font-family: 'Playfair Display', Georgia, serif;
+    }
+
+    .font-cinzel {
+      font-family: 'Cinzel', serif;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Royal gold gradient text */
+    .text-gold {
+      background: linear-gradient(135deg, #F9E79F 0%, #E5BE39 40%, #D4AF37 70%, #996515 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .bg-gold {
+      background: linear-gradient(135deg, var(--gold-primary), var(--gold-light));
+      color: #080E1A;
+      font-weight: 700;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      border: none;
+    }
+    .btn-gold {
+      background: linear-gradient(135deg, #D4AF37, #F3C623);
+      color: #080E1A;
+      box-shadow: 0 4px 20px rgba(212, 175, 55, 0.25);
+    }
+    .btn-gold:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 24px rgba(212, 175, 55, 0.4);
+    }
+    .btn-whatsapp {
+      background: rgba(37, 211, 102, 0.15);
+      border: 1px solid rgba(37, 211, 102, 0.5);
+      color: #4ade80;
+    }
+    .btn-whatsapp:hover {
+      background: rgba(37, 211, 102, 0.25);
+      transform: translateY(-2px);
+    }
+    .btn-outline {
+      background: transparent;
+      border: 1px solid var(--border-subtle);
+      color: var(--gold-light);
+    }
+    .btn-outline:hover {
+      background: rgba(212, 175, 55, 0.1);
+    }
+
+    /* Top bar */
+    .top-bar {
+      background: #060B14;
+      border-bottom: 1px solid var(--border-subtle);
+      font-size: 13px;
+      padding: 8px 0;
+    }
+    .top-bar-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    /* Sticky Navbar */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 99;
+      background: rgba(8, 14, 26, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border-dark);
+    }
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 75px;
+    }
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .logo-crest {
+      width: 44px;
+      height: 44px;
+      background: linear-gradient(135deg, var(--gold-primary), var(--gold-light));
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #080E1A;
+      font-family: 'Cinzel', serif;
+      font-weight: 900;
+      font-size: 20px;
+    }
+    .brand-text h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 18px;
+      color: #FFF;
+      letter-spacing: 0.5px;
+      margin: 0;
+    }
+    .brand-text span {
+      color: var(--gold-primary);
+    }
+    .brand-text p {
+      font-size: 11px;
+      color: var(--text-muted);
+      margin: 0;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-muted);
+    }
+    .nav-links a:hover {
+      color: var(--gold-light);
+    }
+
+    .nav-actions {
+      display: flex;
+      gap: 10px;
+    }
+
+    .hamburger {
+      display: none;
+      background: none;
+      border: 1px solid var(--border-dark);
+      padding: 8px;
+      border-radius: 6px;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    /* Mobile Nav Drawer */
+    #mobile-menu {
+      display: none;
+      flex-direction: column;
+      gap: 12px;
+      padding: 16px 20px 24px;
+      background: #0B1528;
+      border-bottom: 1px solid var(--border-dark);
+    }
+    #mobile-menu a {
+      padding: 10px;
+      background: #080E1A;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    /* Section styling */
+    section {
+      padding: 80px 0;
+    }
+    .section-title {
+      text-align: center;
+      max-width: 750px;
+      margin: 0 auto 50px;
+    }
+    .section-subtitle {
+      color: var(--gold-primary);
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: 2px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      display: block;
+    }
+    .section-title h2 {
+      font-size: 36px;
+      color: #FFF;
+      margin-bottom: 16px;
+    }
+    .section-title p {
+      color: var(--text-muted);
+      font-size: 15px;
+    }
+    .gold-divider {
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--gold-primary), var(--gold-light));
+      margin: 0 auto 16px;
+      border-radius: 2px;
+    }
+
+    /* Hero section */
+    .hero {
+      position: relative;
+      padding: 90px 0 110px;
+      background: radial-gradient(circle at 50% 20%, #112244 0%, #080E1A 70%);
+      overflow: hidden;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 50px;
+      align-items: center;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(212, 175, 55, 0.1);
+      border: 1px solid var(--border-subtle);
+      color: var(--gold-light);
+      padding: 6px 14px;
+      border-radius: 30px;
+      font-size: 12px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .hero h1 {
+      font-size: 52px;
+      line-height: 1.15;
+      color: #FFF;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      color: #CBD5E1;
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 25px;
+    }
+    .hero-ctas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 25px;
+    }
+    .hero-trust-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .hero-trust-pill {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-dark);
+      padding: 6px 12px;
+      border-radius: 6px;
+    }
+    .hero-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    }
+    .hero-card img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+    }
+    .hero-card-body {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      text-align: center;
+      border-top: 1px solid var(--border-dark);
+    }
+    .stat-val {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--gold-light);
+    }
+    .stat-lbl {
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    /* About cards */
+    .about-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+    .about-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-dark);
+      border-radius: 14px;
+      padding: 30px;
+      transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+    .about-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--border-subtle);
+    }
+    .about-card h3 {
+      font-size: 20px;
+      color: #FFF;
+      margin: 15px 0 10px;
+    }
+    .about-card p {
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    /* Room cards */
+    .tab-switcher {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 40px;
+    }
+    .tab-btn {
+      padding: 10px 24px;
+      border-radius: 8px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-dark);
+      color: #FFF;
+      font-weight: 600;
+      cursor: pointer;
+      font-size: 14px;
+      transition: all 0.2s;
+    }
+    .tab-btn.active {
+      background: var(--gold-primary);
+      color: #080E1A;
+      font-weight: 700;
+    }
+    .rooms-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+    }
+    .room-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-dark);
+      border-radius: 14px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.3s;
+    }
+    .room-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--gold-primary);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+    }
+    .room-img-wrap {
+      position: relative;
+      height: 220px;
+    }
+    .room-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .room-badge {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: var(--gold-primary);
+      color: #080E1A;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 4px 10px;
+      border-radius: 20px;
+      text-transform: uppercase;
+    }
+    .room-body {
+      padding: 24px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .room-price {
+      font-size: 28px;
+      font-weight: 800;
+      color: #FFF;
+      margin: 8px 0;
+    }
+    .room-price span {
+      font-size: 13px;
+      color: var(--text-muted);
+      font-weight: 400;
+    }
+    .room-features {
+      list-style: none;
+      margin: 18px 0;
+      font-size: 13px;
+      color: #CBD5E1;
+    }
+    .room-features li {
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .check-icon {
+      color: #4ade80;
+    }
+
+    /* Amenities Grid */
+    .amenities-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 20px;
+    }
+    .amenity-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-dark);
+      border-radius: 12px;
+      padding: 24px;
+      transition: 0.25s;
+    }
+    .amenity-card:hover {
+      border-color: var(--gold-primary);
+      transform: translateY(-3px);
+    }
+    .amenity-icon {
+      font-size: 24px;
+      margin-bottom: 12px;
+      display: inline-block;
+    }
+    .amenity-card h4 {
+      font-size: 16px;
+      color: #FFF;
+      margin-bottom: 8px;
+    }
+    .amenity-card p {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* Food Timetable */
+    .food-days {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 30px;
+    }
+    .food-day-btn {
+      padding: 8px 18px;
+      border-radius: 6px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-dark);
+      color: #CBD5E1;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .food-day-btn.active {
+      background: var(--gold-primary);
+      color: #080E1A;
+      font-weight: 800;
+    }
+    .food-box {
+      max-width: 800px;
+      margin: 0 auto;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 16px;
+      padding: 30px;
+    }
+    .meal-row {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border-dark);
+      font-size: 14px;
+    }
+    .meal-row:last-child {
+      border-bottom: none;
+    }
+    .meal-type {
+      font-weight: 700;
+      color: var(--gold-light);
+    }
+    .meal-items {
+      color: #E2E8F0;
+    }
+
+    /* Photo Gallery & Lightbox */
+    .gallery-filters {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 25px;
+      flex-wrap: wrap;
+    }
+    .filter-btn {
+      padding: 6px 16px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-dark);
+      color: var(--text-muted);
+      border-radius: 6px;
+      font-size: 13px;
+      cursor: pointer;
+    }
+    .filter-btn.active {
+      background: var(--gold-primary);
+      color: #080E1A;
+      font-weight: 700;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 16px;
+    }
+    .gallery-item {
+      position: relative;
+      height: 200px;
+      border-radius: 10px;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s;
+    }
+    .gallery-item:hover img {
+      transform: scale(1.08);
+    }
+    .gallery-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(0deg, rgba(8,14,26,0.9), transparent);
+      display: flex;
+      align-items: flex-end;
+      padding: 14px;
+      opacity: 0.9;
+    }
+    .gallery-overlay span {
+      font-size: 13px;
+      font-weight: 600;
+      color: #FFF;
+    }
+
+    /* Lightbox modal */
+    .lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.92);
+      z-index: 999;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .lightbox.active {
+      display: flex;
+    }
+    .lightbox-content {
+      max-width: 800px;
+      width: 100%;
+      text-align: center;
+    }
+    .lightbox-content img {
+      max-height: 70vh;
+      margin: 0 auto;
+      border-radius: 8px;
+    }
+    .lightbox-caption {
+      color: #FFF;
+      margin-top: 14px;
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .lightbox-close {
+      position: absolute;
+      top: 20px;
+      right: 25px;
+      color: #fff;
+      font-size: 32px;
+      cursor: pointer;
+    }
+
+    /* Rules accordion */
+    .accordion {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .acc-item {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-dark);
+      border-radius: 8px;
+      margin-bottom: 12px;
+      overflow: hidden;
+    }
+    .acc-header {
+      padding: 18px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      font-weight: 700;
+      color: #FFF;
+      font-size: 15px;
+    }
+    .acc-body {
+      display: none;
+      padding: 0 24px 18px;
+      font-size: 14px;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border-dark);
+      padding-top: 14px;
+    }
+    .acc-item.open .acc-body {
+      display: block;
+    }
+    .acc-icon {
+      color: var(--gold-primary);
+      transition: transform 0.2s;
+    }
+    .acc-item.open .acc-icon {
+      transform: rotate(180deg);
+    }
+
+    /* Testimonials */
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+    .testimonial-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-dark);
+      border-radius: 14px;
+      padding: 26px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .stars {
+      color: #FBBF24;
+      margin-bottom: 12px;
+    }
+    .testimonial-card p {
+      font-style: italic;
+      color: #CBD5E1;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .author-info {
+      margin-top: 20px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border-dark);
+    }
+    .author-name {
+      font-weight: 700;
+      color: #FFF;
+      font-size: 14px;
+    }
+    .author-role {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    /* Location section */
+    .location-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 30px;
+      align-items: start;
+    }
+    .loc-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-dark);
+      border-radius: 14px;
+      padding: 26px;
+      margin-bottom: 20px;
+    }
+    .loc-card h4 {
+      color: #FFF;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .loc-card p {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+    .landmarks-list {
+      list-style: none;
+      margin-top: 15px;
+    }
+    .landmarks-list li {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border-dark);
+      font-size: 13px;
+    }
+    .landmarks-list li:last-child {
+      border-bottom: none;
+    }
+    .map-frame {
+      width: 100%;
+      height: 480px;
+      border-radius: 14px;
+      border: 1px solid var(--border-dark);
+    }
+
+    /* Booking Form */
+    .booking-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.3fr;
+      gap: 30px;
+    }
+    .booking-form {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-dark);
+      border-radius: 16px;
+      padding: 30px;
+    }
+    .form-group {
+      margin-bottom: 18px;
+    }
+    .form-group label {
+      display: block;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #CBD5E1;
+      margin-bottom: 6px;
+    }
+    .form-control {
+      width: 100%;
+      padding: 12px 14px;
+      background: var(--bg-main);
+      border: 1px solid var(--border-dark);
+      border-radius: 8px;
+      color: #FFF;
+      font-size: 14px;
+      font-family: inherit;
+      outline: none;
+    }
+    .form-control:focus {
+      border-color: var(--gold-primary);
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
+    /* Footer */
+    footer {
+      background: #050A14;
+      border-top: 1px solid var(--border-dark);
+      padding: 60px 0 100px;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+    .footer-col h4 {
+      color: #FFF;
+      font-size: 15px;
+      margin-bottom: 16px;
+      font-weight: 700;
+    }
+    .footer-links {
+      list-style: none;
+    }
+    .footer-links li {
+      margin-bottom: 8px;
+    }
+    .footer-links a:hover {
+      color: var(--gold-light);
+    }
+
+    /* Floating mobile sticky bar */
+    .mobile-float-bar {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(8, 14, 26, 0.96);
+      backdrop-filter: blur(10px);
+      border-top: 1px solid var(--border-dark);
+      padding: 10px 14px;
+      z-index: 998;
+      gap: 8px;
+    }
+    .mobile-float-bar a {
+      flex: 1;
+      padding: 12px 6px;
+      font-size: 12px;
+      border-radius: 8px;
+      text-align: center;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .hero-grid, .location-grid, .booking-grid {
+        grid-template-columns: 1fr;
+      }
+      .nav-links, .nav-actions {
+        display: none;
+      }
+      .hamburger {
+        display: block;
+      }
+      .hero h1 {
+        font-size: 38px;
+      }
+      .mobile-float-bar {
+        display: flex;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       SECTION 0: TOP NOTIFICATION BAR
+       ========================================================================== -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div>
+        <!-- EDIT HERE: Admission Notice -->
+        <span style="color: var(--gold-light); font-weight: 600;">✨ Admissions Open 2026:</span> 
+        Near Acharya Institute (350m) • Separate Boys &amp; Girls Wings
+      </div>
+      <div>
+        <!-- EDIT HERE: Phone numbers -->
+        <a href="tel:+919606338697" style="color: var(--gold-primary); font-weight: 700;">
+          📞 Call: +91 96063 38697
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       STICKY NAVBAR
+       ========================================================================== -->
+  <header>
+    <div class="container navbar">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="brand-logo">
+        <div class="logo-crest">R</div>
+        <div class="brand-text">
+          <!-- EDIT HERE: PG Name -->
+          <h1>ROYAL <span>PG</span></h1>
+          <p>Boys &amp; Girls • Soladevanahalli, Bengaluru</p>
+        </div>
+      </a>
+
+      <!-- Desktop Menu Links -->
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#rooms">Rooms &amp; Pricing</a>
+        <a href="#amenities">Amenities</a>
+        <a href="#food">Food Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#rules">Rules</a>
+        <a href="#location">Location</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="nav-actions">
+        <!-- EDIT HERE: WhatsApp pre-filled message link -->
+        <a href="https://wa.me/919606338697?text=Hi%2C%20I'm%20interested%20in%20a%20room%20at%20Royal%20Boys%20and%20Girls%20PG" target="_blank" class="btn btn-whatsapp">
+          WhatsApp Us
+        </a>
+        <a href="#contact" class="btn btn-gold">
+          Book a Visit
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Toggle Navigation">
+        ☰
+      </button>
+
+    </div>
+
+    <!-- Mobile Nav Drawer -->
+    <div id="mobile-menu">
+      <a href="#about" onclick="toggleMobileMenu()">About Us</a>
+      <a href="#rooms" onclick="toggleMobileMenu()">Rooms &amp; Rates</a>
+      <a href="#amenities" onclick="toggleMobileMenu()">Amenities</a>
+      <a href="#food" onclick="toggleMobileMenu()">Food Menu</a>
+      <a href="#gallery" onclick="toggleMobileMenu()">Photo Gallery</a>
+      <a href="#rules" onclick="toggleMobileMenu()">Rules &amp; Policies</a>
+      <a href="#location" onclick="toggleMobileMenu()">Location &amp; Distance</a>
+      <a href="#contact" onclick="toggleMobileMenu()" style="color: var(--gold-light); font-weight: bold;">Book Room / Visit</a>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       SECTION 1: HERO
+       ========================================================================== -->
+  <section class="hero">
+    <div class="container hero-grid">
+      
+      <div>
+        <div class="hero-badge">
+          🛡️ Verified &amp; Parent-Approved PG in Soladevanahalli
+        </div>
+
+        <!-- EDIT HERE: Hero Headline & Sub-headline -->
+        <h1>
+          Your Comfortable <br>
+          <span class="text-gold">Home Away From Home</span>
+        </h1>
+
+        <p>
+          Premium paying guest accommodation in Bengaluru, just 
+          <strong>3 minutes walk from Acharya Institute</strong>. Thoughtfully maintained with 
+          100% separate wings for boys and girls, 3 delicious home-cooked meals, high-speed Wi-Fi, and 24/7 security.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="hero-ctas">
+          <a href="#contact" class="btn btn-gold">
+            📅 Book a Free Visit
+          </a>
+          <!-- EDIT HERE: WhatsApp Number -->
+          <a href="https://wa.me/919606338697?text=Hi%2C%20I'm%20interested%20in%20a%20room%20at%20Royal%20Boys%20and%20Girls%20PG" target="_blank" class="btn btn-whatsapp">
+            💬 WhatsApp Us (Instant)
+          </a>
+        </div>
+
+        <div class="hero-trust-list">
+          <span class="hero-trust-pill">✓ 100% Separate Wings for Boys &amp; Girls</span>
+          <span class="hero-trust-pill">✓ 350m to Acharya Institute</span>
+          <span class="hero-trust-pill">✓ 3 Fresh Meals + Evening Tea</span>
+          <span class="hero-trust-pill">✓ Biometric &amp; CCTV Guard</span>
+        </div>
+      </div>
+
+      <!-- Hero Visual Card -->
+      <div>
+        <div class="hero-card">
+          <!-- EDIT HERE: Hero Room Photo URL -->
+          <img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=1000&q=80" alt="Royal Boys and Girls PG Deluxe Room">
+          <div class="hero-card-body">
+            <div>
+              <div class="stat-val">350m</div>
+              <div class="stat-lbl">To Acharya Institute</div>
+            </div>
+            <div>
+              <div class="stat-val">3x Daily</div>
+              <div class="stat-lbl">Home-Style Food</div>
+            </div>
+            <div>
+              <div class="stat-val">24/7</div>
+              <div class="stat-lbl">CCTV &amp; Power Backup</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 2: ABOUT US
+       ========================================================================== -->
+  <section id="about" style="background: #0B1528;">
+    <div class="container">
+      <div class="section-title">
+        <span class="section-subtitle">Who We Are</span>
+        <h2>About Royal Boys &amp; Girls PG</h2>
+        <div class="gold-divider"></div>
+        <!-- EDIT HERE: About Us Description -->
+        <p>
+          Royal Boys and Girls PG was founded with a single mission: to provide out-of-station students 
+          and working professionals a secure, hygienic, and comforting space that feels just like home. 
+          Situated near Achit Nagar, Soladevanahalli, we are surrounded by a peaceful neighborhood ideal for study and relaxation.
+        </p>
+      </div>
+
+      <div class="about-cards">
+        <div class="about-card">
+          <div style="font-size: 28px;">📍</div>
+          <h3>Unbeatable Location</h3>
+          <p>
+            Avoid daily Bangalore traffic jams. Our PG is located just <strong>350 meters (a 3-minute walk)</strong> 
+            to Acharya Institute of Technology, making it effortless to attend morning lectures, library sessions, and campus events.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <div style="font-size: 28px;">🛡️</div>
+          <h3>Parent-Approved Safety</h3>
+          <p>
+            Complete separation between Boys and Girls sections with independent floor access. 
+            Equipped with 24/7 CCTV surveillance, gate timings, biometric door access, and a resident lady warden.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <div style="font-size: 28px;">🍲</div>
+          <h3>Nutritious Home Cooking</h3>
+          <p>
+            Enjoy 3 freshly prepared meals every day plus evening chai. We prepare balanced North and South Indian food 
+            using pure RO drinking water, fresh daily vegetables, and our special Sunday Biryani feast!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 3: ROOMS & PRICING
+       ========================================================================== -->
+  <section id="rooms">
+    <div class="container">
+      <div class="section-title">
+        <span class="section-subtitle">Affordable Living</span>
+        <h2>Rooms &amp; Monthly Pricing</h2>
+        <div class="gold-divider"></div>
+        <p>
+          All packages include daily 3-time meals, high-speed Wi-Fi, electricity, 24/7 hot water, and housekeeping. 
+          Transparent pricing with zero hidden fees!
+        </p>
+      </div>
+
+      <!-- Gender Switcher -->
+      <div class="tab-switcher">
+        <button class="tab-btn active" id="btn-boys" onclick="switchWing('boys')">👦 Boys Wing</button>
+        <button class="tab-btn" id="btn-girls" onclick="switchWing('girls')">👧 Girls Wing (Dedicated Warden)</button>
+      </div>
+
+      <!-- BOYS WING ROOMS -->
+      <div id="wing-boys" class="rooms-grid">
+        
+        <!-- EDIT HERE: Room 1 (Boys Single) -->
+        <div class="room-card">
+          <div class="room-img-wrap">
+            <img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=800&q=80" alt="Boys Single Room">
+            <span class="room-badge">Maximum Privacy</span>
+          </div>
+          <div class="room-body">
+            <div>
+              <h3 style="color:#FFF;">Single Occupancy Room</h3>
+              <!-- EDIT HERE: Price placeholder -->
+              <div class="room-price">₹12,000 <span>/ month</span></div>
+              <p style="font-size: 12px; color: var(--gold-light);">Refundable Deposit: 2 Months</p>
+              <ul class="room-features">
+                <li><span class="check-icon">✓</span> Private attached western bathroom</li>
+                <li><span class="check-icon">✓</span> Individual study desk &amp; chair</li>
+                <li><span class="check-icon">✓</span> Large steel wardrobe with lock</li>
+                <li><span class="check-icon">✓</span> 3 Daily home meals + evening tea</li>
+                <li><span class="check-icon">✓</span> High-speed Wi-Fi &amp; daily cleaning</li>
+              </ul>
+            </div>
+            <a href="#contact" class="btn btn-outline" style="width:100%; text-align:center;">
+              Book Single Room
+            </a>
+          </div>
+        </div>
+
+        <!-- EDIT HERE: Room 2 (Boys Double) -->
+        <div class="room-card">
+          <div class="room-img-wrap">
+            <img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=800&q=80" alt="Boys Double Sharing Room">
+            <span class="room-badge">Most Popular</span>
+          </div>
+          <div class="room-body">
+            <div>
+              <h3 style="color:#FFF;">Double Sharing Room</h3>
+              <!-- EDIT HERE: Price placeholder -->
+              <div class="room-price">₹8,000 <span>/ month</span></div>
+              <p style="font-size: 12px; color: var(--gold-light);">Refundable Deposit: 2 Months</p>
+              <ul class="room-features">
+                <li><span class="check-icon">✓</span> Attached bathroom with 24/7 hot geyser</li>
+                <li><span class="check-icon">✓</span> 2 Separate single beds &amp; mattresses</li>
+                <li><span class="check-icon">✓</span> 2 Independent study tables &amp; wardrobes</li>
+                <li><span class="check-icon">✓</span> 3 Times delicious home-cooked meals</li>
+                <li><span class="check-icon">✓</span> High-speed fiber Wi-Fi &amp; power backup</li>
+              </ul>
+            </div>
+            <a href="#contact" class="btn btn-outline" style="width:100%; text-align:center;">
+              Book Double Sharing
+            </a>
+          </div>
+        </div>
+
+        <!-- EDIT HERE: Room 3 (Boys Triple) -->
+        <div class="room-card">
+          <div class="room-img-wrap">
+            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80" alt="Boys Triple Sharing Room">
+            <span class="room-badge">Budget Choice</span>
+          </div>
+          <div class="room-body">
+            <div>
+              <h3 style="color:#FFF;">Triple Sharing Room</h3>
+              <!-- EDIT HERE: Price placeholder -->
+              <div class="room-price">₹6,500 <span>/ month</span></div>
+              <p style="font-size: 12px; color: var(--gold-light);">Refundable Deposit: 2 Months</p>
+              <ul class="room-features">
+                <li><span class="check-icon">✓</span> Spacious room with cross ventilation</li>
+                <li><span class="check-icon">✓</span> 3 Individual lockable cupboards</li>
+                <li><span class="check-icon">✓</span> Attached clean bathroom with hot water</li>
+                <li><span class="check-icon">✓</span> Unlimited 3 meals + evening tea</li>
+                <li><span class="check-icon">✓</span> Free automatic washing machine access</li>
+              </ul>
+            </div>
+            <a href="#contact" class="btn btn-outline" style="width:100%; text-align:center;">
+              Book Triple Sharing
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- GIRLS WING ROOMS -->
+      <div id="wing-girls" class="rooms-grid" style="display: none;">
+        
+        <!-- EDIT HERE: Room 1 (Girls Single) -->
+        <div class="room-card">
+          <div class="room-img-wrap">
+            <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=800&q=80" alt="Girls Single Room">
+            <span class="room-badge">Ultra Secure</span>
+          </div>
+          <div class="room-body">
+            <div>
+              <h3 style="color:#FFF;">Single Deluxe (Girls Wing)</h3>
+              <!-- EDIT HERE: Price placeholder -->
+              <div class="room-price">₹12,500 <span>/ month</span></div>
+              <p style="font-size: 12px; color: var(--gold-light);">Dedicated Resident Lady Warden</p>
+              <ul class="room-features">
+                <li><span class="check-icon">✓</span> Full biometric door access security</li>
+                <li><span class="check-icon">✓</span> Attached private sanitized bathroom</li>
+                <li><span class="check-icon">✓</span> Personal study desk with reading light</li>
+                <li><span class="check-icon">✓</span> 3 Healthy meals cooked with pure RO water</li>
+                <li><span class="check-icon">✓</span> Laundry &amp; power backup included</li>
+              </ul>
+            </div>
+            <a href="#contact" class="btn btn-outline" style="width:100%; text-align:center;">
+              Book Girls Single
+            </a>
+          </div>
+        </div>
+
+        <!-- EDIT HERE: Room 2 (Girls Double) -->
+        <div class="room-card">
+          <div class="room-img-wrap">
+            <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=800&q=80" alt="Girls Double Sharing Room">
+            <span class="room-badge">Top Pick for Friends</span>
+          </div>
+          <div class="room-body">
+            <div>
+              <h3 style="color:#FFF;">Double Sharing (Girls Wing)</h3>
+              <!-- EDIT HERE: Price placeholder -->
+              <div class="room-price">₹8,500 <span>/ month</span></div>
+              <p style="font-size: 12px; color: var(--gold-light);">Dedicated Resident Lady Warden</p>
+              <ul class="room-features">
+                <li><span class="check-icon">✓</span> Airy twin sharing room with balcony</li>
+                <li><span class="check-icon">✓</span> 2 Separate beds &amp; lockable closets</li>
+                <li><span class="check-icon">✓</span> Attached western bath with instant geyser</li>
+                <li><span class="check-icon">✓</span> 3 Daily home-cooked meals &amp; snacks</li>
+                <li><span class="check-icon">✓</span> 24/7 CCTV in all common corridors</li>
+              </ul>
+            </div>
+            <a href="#contact" class="btn btn-outline" style="width:100%; text-align:center;">
+              Book Girls Double
+            </a>
+          </div>
+        </div>
+
+        <!-- EDIT HERE: Room 3 (Girls Triple) -->
+        <div class="room-card">
+          <div class="room-img-wrap">
+            <img src="https://images.unsplash.com/photo-1540518614846-7ede433c4ef4?auto=format&fit=crop&w=800&q=80" alt="Girls Triple Sharing Room">
+            <span class="room-badge">Affordable &amp; Cozy</span>
+          </div>
+          <div class="room-body">
+            <div>
+              <h3 style="color:#FFF;">Triple Sharing (Girls Wing)</h3>
+              <!-- EDIT HERE: Price placeholder -->
+              <div class="room-price">₹6,800 <span>/ month</span></div>
+              <p style="font-size: 12px; color: var(--gold-light);">Dedicated Resident Lady Warden</p>
+              <ul class="room-features">
+                <li><span class="check-icon">✓</span> Friendly, supportive student atmosphere</li>
+                <li><span class="check-icon">✓</span> 3 Individual secure lockers</li>
+                <li><span class="check-icon">✓</span> Clean attached bathroom with 24/7 hot water</li>
+                <li><span class="check-icon">✓</span> 3 Daily meals + evening tea included</li>
+                <li><span class="check-icon">✓</span> High-speed Wi-Fi and quiet study area</li>
+              </ul>
+            </div>
+            <a href="#contact" class="btn btn-outline" style="width:100%; text-align:center;">
+              Book Girls Triple
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 4: AMENITIES
+       ========================================================================== -->
+  <section id="amenities" style="background: #0B1528;">
+    <div class="container">
+      <div class="section-title">
+        <span class="section-subtitle">Comfort &amp; Convenience</span>
+        <h2>All-Inclusive Amenities</h2>
+        <div class="gold-divider"></div>
+        <p>Everything you need for an easy, productive, and comfortable stay.</p>
+      </div>
+
+      <div class="amenities-grid">
+        <!-- EDIT HERE: Amenities list -->
+        <div class="amenity-card">
+          <span class="amenity-icon">📶</span>
+          <h4>High-Speed Wi-Fi</h4>
+          <p>100+ Mbps dedicated dual-band fiber optic network for classes, exams, and streaming.</p>
+        </div>
+        <div class="amenity-card">
+          <span class="amenity-icon">🍲</span>
+          <h4>Home-Style Meals</h4>
+          <p>Unlimited breakfast, lunch, and dinner cooked fresh daily in an immaculate kitchen.</p>
+        </div>
+        <div class="amenity-card">
+          <span class="amenity-icon">🧺</span>
+          <h4>Laundry &amp; Washing</h4>
+          <p>Fully automatic washing machines and spacious covered clothes drying terrace.</p>
+        </div>
+        <div class="amenity-card">
+          <span class="amenity-icon">✨</span>
+          <h4>Daily Housekeeping</h4>
+          <p>Daily sweeping, mopping, bathroom sanitization, and trash clearing by dedicated staff.</p>
+        </div>
+        <div class="amenity-card">
+          <span class="amenity-icon">⚡</span>
+          <h4>24/7 Power Backup</h4>
+          <p>Heavy-duty inverter and generator backup so your Wi-Fi, lights, and fans never cut out.</p>
+        </div>
+        <div class="amenity-card">
+          <span class="amenity-icon">💧</span>
+          <h4>RO UV Drinking Water</h4>
+          <p>Commercial multi-stage RO UV purification system on all floors with daily TDS check.</p>
+        </div>
+        <div class="amenity-card">
+          <span class="amenity-icon">📹</span>
+          <h4>CCTV &amp; Biometrics</h4>
+          <p>24/7 security guard at entrance gate, CCTV camera coverage, and biometric access.</p>
+        </div>
+        <div class="amenity-card">
+          <span class="amenity-icon">🚿</span>
+          <h4>24/7 Hot Water</h4>
+          <p>Solar heating backed by instant electric geysers in all attached washrooms.</p>
+        </div>
+        <div class="amenity-card">
+          <span class="amenity-icon">🛵</span>
+          <h4>Parking Space</h4>
+          <p>Covered and secure parking inside the hostel compound for two-wheelers and bicycles.</p>
+        </div>
+        <div class="amenity-card">
+          <span class="amenity-icon">📚</span>
+          <h4>Dedicated Study Area</h4>
+          <p>Quiet, well-illuminated study space with charging sockets for exam preparation.</p>
+        </div>
+        <div class="amenity-card">
+          <span class="amenity-icon">🔒</span>
+          <h4>Lockable Cupboards</h4>
+          <p>Individual full-size wardrobes with personal keys to keep all your belongings secure.</p>
+        </div>
+        <div class="amenity-card">
+          <span class="amenity-icon">☕</span>
+          <h4>Evening Snacks &amp; Chai</h4>
+          <p>Freshly brewed hot masala tea/coffee and evening snacks served daily at 5:00 PM.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 5: FOOD MENU (WEEKLY MEAL TIMETABLE)
+       ========================================================================== -->
+  <section id="food">
+    <div class="container">
+      <div class="section-title">
+        <span class="section-subtitle">Delicious &amp; Healthy</span>
+        <h2>Weekly Home-Style Meal Timetable</h2>
+        <div class="gold-divider"></div>
+        <p>
+          We know good food is the most important part of student life. Here is our regular weekly menu!
+        </p>
+      </div>
+
+      <!-- Day Selector Tabs -->
+      <div class="food-days">
+        <button class="food-day-btn active" onclick="showMenuDay('mon', this)">Monday</button>
+        <button class="food-day-btn" onclick="showMenuDay('tue', this)">Tuesday</button>
+        <button class="food-day-btn" onclick="showMenuDay('wed', this)">Wednesday</button>
+        <button class="food-day-btn" onclick="showMenuDay('thu', this)">Thursday</button>
+        <button class="food-day-btn" onclick="showMenuDay('fri', this)">Friday</button>
+        <button class="food-day-btn" onclick="showMenuDay('sat', this)">Saturday</button>
+        <button class="food-day-btn" onclick="showMenuDay('sun', this)">Sunday ✨ Special</button>
+      </div>
+
+      <!-- EDIT HERE: Food Menu Day Contents -->
+      <div class="food-box">
+        
+        <div id="menu-mon" class="day-menu">
+          <h3 style="color:#FFF; margin-bottom:12px;">Monday's Menu</h3>
+          <div class="meal-row">
+            <span class="meal-type">Breakfast</span>
+            <span class="meal-items">Crispy Idli &amp; Medu Vada with Sambar &amp; Coconut Chutney + Hot Coffee/Tea</span>
+          </div>
+          <div class="meal-row">
+            <span class="meal-type">Lunch</span>
+            <span class="meal-items">Steamed Rice, Dal Tadka, Seasonal Veg Curry, Hot Phulkas, Curd &amp; Papad</span>
+          </div>
+          <div class="meal-row">
+            <span class="meal-type">Evening Snacks</span>
+            <span class="meal-items">Hot Onion Pakoda &amp; Kadak Masala Chai</span>
+          </div>
+          <div class="meal-row">
+            <span class="meal-type">Dinner</span>
+            <span class="meal-items">Veg Pulao, Chapati, Paneer Butter Masala, Fresh Salad &amp; Warm Rasam</span>
+          </div>
+        </div>
+
+        <div id="menu-tue" class="day-menu" style="display: none;">
+          <h3 style="color:#FFF; margin-bottom:12px;">Tuesday's Menu</h3>
+          <div class="meal-row">
+            <span class="meal-type">Breakfast</span>
+            <span class="meal-items">Aloo Paratha with Mint Chutney &amp; Fresh Curd / Bread Toast + Hot Tea</span>
+          </div>
+          <div class="meal-row">
+            <span class="meal-type">Lunch</span>
+            <span class="meal-items">Jeera Rice, Homestyle Rajma Curry, Soft Phulkas, Mixed Vegetable Poriyal &amp; Buttermilk</span>
+          </div>
+          <div class="meal-row">
+            <span class="meal-type">Evening Snacks</span>
+            <span class="meal-items">Masala Puffed Rice (Girmit) &amp; Ginger Tea</span>
+          </div>
+          <div class="meal-row">
+            <span class="meal-type">Dinner</span>
+            <span class="meal-items">Egg Curry (or Soya Chunks Curry for Veg), Soft Chapatis, Steamed Rice &amp; Sambar</span>
+          </div>
+        </div>
+
+        <div id="menu-wed" class="day-menu" style="display: none;">
+          <h3 style="color:#FFF; margin-bottom:12px;">Wednesday's Menu</h3>
+          <div class="meal-row">
+            <span class="meal-type">Breakfast</span>
+            <span class="meal-items">Masala Dosa / Set Dosa with Potato Palya, Chutneys + Filter Coffee</span>
+          </div>
+          <div class="meal-row">
+            <span class="meal-type">Lunch</span>
+            <span class="meal-items">South Indian Thali: Steamed Rice, Drumstick Sambar, Tomato Rasam, Curd &amp; Fryums</span>
+          </div>
+          <div class="meal-row">
+            <span class="meal-type">Evening Snacks</span>
+            <span class="meal-items">Hot Samosa with Tamarind Chutney &amp; Tea</span>
+          </div>
+          <div class="meal-row">
+            <span class="meal-type">Dinner</span>
+            <span class="meal-items">Veg Fried Rice, Gobi Manchurian Gravy, Chapatis &amp; Sweet Kheer</span>
+          </div>
+        </div>
+
+        <div id="menu-thu" class="day-menu" style="display: none;">
+          <h3 style="color:#FFF; margin-bottom:12px;">Thursday's Menu</h3>
+          <div class="meal-row">
+            <span class="meal-type">Breakfast</span>
+            <span class="meal-items">Mysore Bonda / Upma with Kesari Bath (Chow Chow Bath) &amp; Chutney + Tea</span>
+          </div>
+          <div class="meal-row">
+            <span class="meal-type">Lunch</span>
+            <span class="meal-items">Lemon Rice &amp; White Rice, Dal Fry, Bhindi Fry, Hot Phulkas &amp; Curd</span>
+          </div>
+          <div class="meal-row">
+            <span class="meal-type">Evening Snacks</span>
+            <span class="meal-items">Veg Cutlet &amp; Cardamom Tea</span>
+          </div>
+          <div class="meal-row">
+            <span class="meal-type">Dinner</span>
+            <span class="meal-items">Tawa Roti, Shahi Paneer, Jeera Rice, Dal Makhani &amp; Mixed Pickle</span>
+          </div>
+        </div>
+
+        <div id="menu-fri" class="day-menu" style="display: none;">
+          <h3 style="color:#FFF; margin-bottom:12px;">Friday's Menu</h3>
+          <div class="meal-row">
+            <span class="meal-type">Breakfast</span>
+            <span class="meal-items">Puri Bhaji (Aloo Curry) &amp; Sooji Halwa + Tea/Coffee</span>
+          </div>
+          <div class="meal-row">
+            <span class="meal-type">Lunch</span>
+            <span class="meal-items">Steamed Rice, Chana Masala (Chole), Hot Phulkas, Veg Salad &amp; Spiced Buttermilk</span>
+          </div>
+          <div class="meal-row">
+            <span class="meal-type">Evening Snacks</span>
+            <span class="meal-items">Crispy Medu Vada / Banana Fritters &amp; Strong Filter Coffee</span>
+          </div>
+          <div class="meal-row">
+            <span class="meal-type">Dinner</span>
+            <span class="meal-items">Veg / Egg Fried Rice, Schezwan Veg Gravy, Soft Chapatis &amp; Fresh Banana</span>
+          </div>
+        </div>
+
+        <div id="menu-sat" class="day-menu" style="display: none;">
+          <h3 style="color:#FFF; margin-bottom:12px;">Saturday's Menu</h3>
+          <div class="meal-row">
+            <span class="meal-type">Breakfast</span>
+            <span class="meal-items">Uttapam with Veggies / Indori Poha with Peanuts &amp; Lemon + Hot Chai</span>
+          </div>
+          <div class="meal-row">
+            <span class="meal-type">Lunch</span>
+            <span class="meal-items">Biryani Rice, Dal Palak, Aloo Gobi Masala, Chapatis, Curd Rice &amp; Papad</span>
+          </div>
+          <div class="meal-row">
+            <span class="meal-type">Evening Snacks</span>
+            <span class="meal-items">Spicy Bhelpuri &amp; Masala Tea</span>
+          </div>
+          <div class="meal-row">
+            <span class="meal-type">Dinner</span>
+            <span class="meal-items">Chapati, Mixed Veg Kurma, Ghee Rice, Rasam &amp; Gulab Jamun</span>
+          </div>
+        </div>
+
+        <div id="menu-sun" class="day-menu" style="display: none;">
+          <h3 style="color:#FFF; margin-bottom:12px;">Sunday's Special Feast Day 🎉</h3>
+          <div class="meal-row">
+            <span class="meal-type">Breakfast</span>
+            <span class="meal-items">Special Masala Poori / Onion Rava Dosa with Chutneys + Filter Coffee</span>
+          </div>
+          <div class="meal-row">
+            <span class="meal-type">Lunch Special</span>
+            <span class="meal-items">✨ Chicken Dum Biryani with Raita &amp; Gravy (Non-Veg) OR Paneer Biryani with Veg Korma &amp; Gulab Jamun (Veg)</span>
+          </div>
+          <div class="meal-row">
+            <span class="meal-type">Evening Snacks</span>
+            <span class="meal-items">Bakery Cake / French Fries &amp; Hot Coffee</span>
+          </div>
+          <div class="meal-row">
+            <span class="meal-type">Dinner</span>
+            <span class="meal-items">Comforting Khichdi / Soft Phulkas, Dal Fry, Steamed Rice, Tomato Rasam &amp; Fresh Curd</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 6: GALLERY WITH LIGHTBOX
+       ========================================================================== -->
+  <section id="gallery" style="background: #0B1528;">
+    <div class="container">
+      <div class="section-title">
+        <span class="section-subtitle">Real Look &amp; Feel</span>
+        <h2>Photo Gallery</h2>
+        <div class="gold-divider"></div>
+        <p>Explore our clean bedrooms, sanitized dining area, study spaces, and building facilities.</p>
+      </div>
+
+      <!-- Gallery Filter Buttons -->
+      <div class="gallery-filters">
+        <button class="filter-btn active" onclick="filterGallery('all', this)">All Photos</button>
+        <button class="filter-btn" onclick="filterGallery('rooms', this)">Bedrooms</button>
+        <button class="filter-btn" onclick="filterGallery('dining', this)">Dining &amp; Kitchen</button>
+        <button class="filter-btn" onclick="filterGallery('common', this)">Study &amp; Common</button>
+        <button class="filter-btn" onclick="filterGallery('building', this)">Building &amp; Exterior</button>
+      </div>
+
+      <!-- EDIT HERE: Gallery Images URLs & Titles -->
+      <div class="gallery-grid">
+        <div class="gallery-item" data-category="rooms" onclick="openLightbox('https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=1200&q=80', 'Twin Sharing Deluxe Bedroom')">
+          <img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=600&q=80" alt="Twin Sharing Room">
+          <div class="gallery-overlay"><span>Twin Sharing Deluxe Room</span></div>
+        </div>
+
+        <div class="gallery-item" data-category="dining" onclick="openLightbox('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80', 'Clean & Spacious Dining Hall')">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80" alt="Dining Hall">
+          <div class="gallery-overlay"><span>Hygienic Dining Area</span></div>
+        </div>
+
+        <div class="gallery-item" data-category="rooms" onclick="openLightbox('https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=1200&q=80', 'Private Single Room with Balcony')">
+          <img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=600&q=80" alt="Single Room">
+          <div class="gallery-overlay"><span>Single Private Room</span></div>
+        </div>
+
+        <div class="gallery-item" data-category="common" onclick="openLightbox('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80', 'Quiet Study & Work Lounge')">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80" alt="Study Lounge">
+          <div class="gallery-overlay"><span>Quiet Study Zone</span></div>
+        </div>
+
+        <div class="gallery-item" data-category="rooms" onclick="openLightbox('https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80', 'Triple Occupancy Student Room')">
+          <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=600&q=80" alt="Triple Sharing Room">
+          <div class="gallery-overlay"><span>Triple Sharing Room</span></div>
+        </div>
+
+        <div class="gallery-item" data-category="rooms" onclick="openLightbox('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=80', 'Attached Western Bathroom with Geyser')">
+          <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=80" alt="Bathroom">
+          <div class="gallery-overlay"><span>Sanitized Washroom</span></div>
+        </div>
+
+        <div class="gallery-item" data-category="building" onclick="openLightbox('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80', 'Hostel Building & Compound')">
+          <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=600&q=80" alt="Building">
+          <div class="gallery-overlay"><span>Building &amp; Vicinity</span></div>
+        </div>
+
+        <div class="gallery-item" data-category="dining" onclick="openLightbox('https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=1200&q=80', 'Fresh Food Preparation in Clean Kitchen')">
+          <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=600&q=80" alt="Kitchen">
+          <div class="gallery-overlay"><span>Fresh Kitchen Prep</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX MODAL -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="lightbox-close">&times;</span>
+    <div class="lightbox-content" onclick="event.stopPropagation()">
+      <img id="lightbox-img" src="" alt="Enlarged photo">
+      <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       SECTION 7: WHY CHOOSE US
+       ========================================================================== -->
+  <section id="why-us">
+    <div class="container">
+      <div class="section-title">
+        <span class="section-subtitle">The Royal Advantage</span>
+        <h2>Why Choose Royal PG?</h2>
+        <div class="gold-divider"></div>
+        <p>A safe, wholesome, and nurturing environment trusted by students and parents across India.</p>
+      </div>
+
+      <div class="about-cards">
+        <div class="about-card">
+          <h3 style="color: var(--gold-light);">1. Biometric Safety &amp; CCTV</h3>
+          <p>Round-the-clock security guard, corridor CCTV surveillance, and secure biometric check-in keep unwanted visitors strictly away.</p>
+        </div>
+        <div class="about-card">
+          <h3 style="color: var(--gold-light);">2. 5-Star Cleanliness</h3>
+          <p>Daily in-room sweeping and bathroom sanitization. Garbage is cleared daily to maintain a hygienic, odor-free living space.</p>
+        </div>
+        <div class="about-card">
+          <h3 style="color: var(--gold-light);">3. 3-Min Walk to Acharya</h3>
+          <p>Save travel costs and avoid early morning rush. Return back to your room between lectures to relax and enjoy lunch.</p>
+        </div>
+        <div class="about-card">
+          <h3 style="color: var(--gold-light);">4. 100% Separate Wings</h3>
+          <p>Independent buildings/floors for boys and girls. The girls wing includes an attentive resident lady warden.</p>
+        </div>
+        <div class="about-card">
+          <h3 style="color: var(--gold-light);">5. Motherly Food Quality</h3>
+          <p>Nutritious food cooked with pure RO water and fresh daily vegetables. Unlimited food portions ensure no student stays hungry.</p>
+        </div>
+        <div class="about-card">
+          <h3 style="color: var(--gold-light);">6. No Hidden Charges</h3>
+          <p>Transparent monthly rent includes electricity, water, Wi-Fi, food, and maintenance. Full refundable deposit upon vacating.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 8: RULES & POLICIES
+       ========================================================================== -->
+  <section id="rules" style="background: #0B1528;">
+    <div class="container">
+      <div class="section-title">
+        <span class="section-subtitle">Discipline &amp; Harmony</span>
+        <h2>Hostel Rules &amp; Policies</h2>
+        <div class="gold-divider"></div>
+        <p>Clear policies to ensure peace, safety, and mutual respect for all residents.</p>
+      </div>
+
+      <div class="accordion">
+        
+        <!-- EDIT HERE: Rule 1 -->
+        <div class="acc-item open">
+          <div class="acc-header" onclick="toggleAcc(this)">
+            <span>Security Deposit &amp; Refund</span>
+            <span class="acc-icon">▼</span>
+          </div>
+          <div class="acc-body">
+            A refundable security deposit of 2 months' rent is collected at check-in. The deposit is refunded via bank transfer upon vacating, after clearance of room inspection and handover of keys.
+          </div>
+        </div>
+
+        <!-- EDIT HERE: Rule 2 -->
+        <div class="acc-item">
+          <div class="acc-header" onclick="toggleAcc(this)">
+            <span>Notice Period for Vacating</span>
+            <span class="acc-icon">▼</span>
+          </div>
+          <div class="acc-body">
+            Residents must provide a minimum of 30 days prior notice via WhatsApp/written format before vacating to ensure smooth account settlement.
+          </div>
+        </div>
+
+        <!-- EDIT HERE: Rule 3 -->
+        <div class="acc-item">
+          <div class="acc-header" onclick="toggleAcc(this)">
+            <span>Gate Timings &amp; Curfew</span>
+            <span class="acc-icon">▼</span>
+          </div>
+          <div class="acc-body">
+            Main gates close at 10:00 PM for safety. Residents having late college projects, lab hours, or company night shifts must inform the warden in advance.
+          </div>
+        </div>
+
+        <!-- EDIT HERE: Rule 4 -->
+        <div class="acc-item">
+          <div class="acc-header" onclick="toggleAcc(this)">
+            <span>Visitor &amp; Parent Policy</span>
+            <span class="acc-icon">▼</span>
+          </div>
+          <div class="acc-body">
+            Parents and guardians are warmly welcomed in the ground-floor visiting lounge between 8:00 AM and 7:30 PM. For privacy and security, outside visitors (especially of the opposite gender) are strictly not permitted inside resident bedrooms.
+          </div>
+        </div>
+
+        <!-- EDIT HERE: Rule 5 -->
+        <div class="acc-item">
+          <div class="acc-header" onclick="toggleAcc(this)">
+            <span>Quiet Hours &amp; Strict Zero Substance Policy</span>
+            <span class="acc-icon">▼</span>
+          </div>
+          <div class="acc-body">
+            Post 10:30 PM is designated quiet study hours. Smoking, alcohol, tobacco, and illegal substances are strictly prohibited inside the hostel premises.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 9: TESTIMONIALS
+       ========================================================================== -->
+  <section id="testimonials">
+    <div class="container">
+      <div class="section-title">
+        <span class="section-subtitle">Real Feedback</span>
+        <h2>What Residents &amp; Parents Say</h2>
+        <div class="gold-divider"></div>
+        <p>Read experiences from students studying at Acharya and out-of-station parents.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        
+        <!-- EDIT HERE: Review 1 -->
+        <div class="testimonial-card">
+          <div>
+            <div class="stars">★★★★★</div>
+            <p>
+              "Being a 1st year B.Tech student at Acharya Institute of Technology, my biggest concern was good food and quiet study hours. Royal PG is literally a 4-minute walk to my college gate! The food genuinely tastes like home and the Wi-Fi never disconnects."
+            </p>
+          </div>
+          <div class="author-info">
+            <div class="author-name">Rohan Sharma</div>
+            <div class="author-role">Student, Acharya Institute of Technology (2nd Year)</div>
+          </div>
+        </div>
+
+        <!-- EDIT HERE: Review 2 -->
+        <div class="testimonial-card">
+          <div>
+            <div class="stars">★★★★★</div>
+            <p>
+              "As parents from Patna, sending our daughter to Bengaluru for pharmacy was nerve-wrecking. But visiting Royal PG and meeting their resident lady warden and seeing the biometric locks gave us total peace of mind. Highly recommended for girls' safety."
+            </p>
+          </div>
+          <div class="author-info">
+            <div class="author-name">Sunita &amp; Rajesh Verma</div>
+            <div class="author-role">Parents (Patna, Bihar)</div>
+          </div>
+        </div>
+
+        <!-- EDIT HERE: Review 3 -->
+        <div class="testimonial-card">
+          <div>
+            <div class="stars">★★★★★</div>
+            <p>
+              "I work in Peenya/HMT industrial belt. The single room gives me complete privacy for remote night shifts. 24/7 power backup and hot water are totally reliable, and the management is very respectful and quick to assist."
+            </p>
+          </div>
+          <div class="author-info">
+            <div class="author-name">Karthik Nair</div>
+            <div class="author-role">Working Professional (Software Engineer)</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 10: LOCATION & MAP
+       ========================================================================== -->
+  <section id="location" style="background: #0B1528;">
+    <div class="container">
+      <div class="section-title">
+        <span class="section-subtitle">Find Us</span>
+        <h2>Location &amp; Nearby Landmarks</h2>
+        <div class="gold-divider"></div>
+        <p>Located in Soladevanahalli, Bengaluru near Acharya Institute and Sri Lakshmi Venkateswara Swami Devasthana.</p>
+      </div>
+
+      <div class="location-grid">
+        
+        <div>
+          <!-- Address Card -->
+          <div class="loc-card">
+            <h4>Address</h4>
+            <!-- EDIT HERE: Physical Address -->
+            <p>
+              3rd Main Cottage Road, 5th Cross Rd, near Acharya Institute, near Sri Lakshmi Venkateswara Swami Devasthana, Achit Nagar, MSPP Colony, Soladevanahalli, Bengaluru, Karnataka 560107
+            </p>
+
+            <div style="margin: 15px 0; padding: 12px; background: #080E1A; border-radius: 8px; border: 1px solid var(--border-dark);">
+              <span style="font-size: 11px; color: var(--gold-primary); text-transform: uppercase; font-weight: bold; display: block;">Google Plus Code</span>
+              <!-- EDIT HERE: Plus Code -->
+              <span style="font-family: monospace; font-size: 14px; font-weight: bold; color: #FFF;">3FRP+J5 Soladevanahalli, Karnataka</span>
+            </div>
+
+            <!-- EDIT HERE: Get Directions Link using Plus Code -->
+            <a href="https://www.google.com/maps/dir/?api=1&destination=3FRP%2BJ5+Soladevanahalli%2C+Karnataka" target="_blank" class="btn btn-gold" style="width: 100%;">
+              🗺️ Get Driving / Walking Directions
+            </a>
+          </div>
+
+          <!-- Distances to Landmarks -->
+          <div class="loc-card">
+            <h4 style="font-size: 15px; text-transform: uppercase; color: var(--gold-light);">Nearby Landmarks &amp; Distances</h4>
+            <ul class="landmarks-list">
+              <li>
+                <span style="font-weight: 600; color: #FFF;">Acharya Institute of Technology</span>
+                <span style="color: var(--gold-primary); font-weight: bold;">350m (3-4 mins walk)</span>
+              </li>
+              <li>
+                <span>Sri Lakshmi Venkateswara Swami Devasthana</span>
+                <span style="color: var(--gold-primary); font-weight: bold;">150m (2 mins walk)</span>
+              </li>
+              <li>
+                <span>Soladevanahalli Railway Station</span>
+                <span style="color: var(--gold-primary); font-weight: bold;">1.8 km (5 mins drive)</span>
+              </li>
+              <li>
+                <span>Hesaraghatta Main Road Bus Stop</span>
+                <span style="color: var(--gold-primary); font-weight: bold;">800m (8 mins walk)</span>
+              </li>
+              <li>
+                <span>Pharmacy &amp; General Stores</span>
+                <span style="color: var(--gold-primary); font-weight: bold;">100m (1 min walk)</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Google Map Embed using Plus Code 3FRP+J5 Soladevanahalli, Karnataka -->
+        <div>
+          <!-- EDIT HERE: Map Iframe -->
+          <iframe 
+            class="map-frame"
+            src="https://www.google.com/maps?q=3FRP%2BJ5+Soladevanahalli%2C+Karnataka&output=embed" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Royal Boys and Girls PG Location Map">
+          </iframe>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 11: CONTACT / BOOKING FORM (WHATSAPP INTEGRATION)
+       ========================================================================== -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-title">
+        <span class="section-subtitle">Get In Touch</span>
+        <h2>Book a Visit or Reserve Room</h2>
+        <div class="gold-divider"></div>
+        <p>Fill out the form below. When you click submit, it opens WhatsApp with your inquiry pre-filled!</p>
+      </div>
+
+      <div class="booking-grid">
+        
+        <!-- Contact details column -->
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: 16px; padding: 30px;">
+          <h3 style="color:#FFF; font-size: 24px; margin-bottom: 12px;">Contact Information</h3>
+          <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 24px;">
+            Have questions about sharing types, food preferences, or room viewings? Reach out directly to the management.
+          </p>
+
+          <div style="margin-bottom: 20px;">
+            <span style="font-size: 11px; color: var(--gold-light); text-transform: uppercase; font-weight: bold; display: block;">Direct Call</span>
+            <!-- EDIT HERE: Phone Number -->
+            <a href="tel:+919606338697" style="color: #FFF; font-size: 16px; font-weight: bold;">+91 96063 38697</a>
+          </div>
+
+          <div style="margin-bottom: 20px;">
+            <span style="font-size: 11px; color: var(--gold-light); text-transform: uppercase; font-weight: bold; display: block;">WhatsApp (Fastest Reply)</span>
+            <!-- EDIT HERE: WhatsApp Number -->
+            <a href="https://wa.me/919606338697" target="_blank" style="color: #4ade80; font-size: 16px; font-weight: bold;">Chat on WhatsApp</a>
+          </div>
+
+          <div style="margin-bottom: 20px;">
+            <span style="font-size: 11px; color: var(--gold-light); text-transform: uppercase; font-weight: bold; display: block;">Email</span>
+            <!-- EDIT HERE: Email address -->
+            <span style="color: #FFF; font-size: 14px;">royalboysgirlspg@gmail.com</span>
+          </div>
+
+          <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid var(--border-dark); font-size: 13px; color: var(--text-muted);">
+            🕒 <strong>Visiting Hours:</strong> Monday – Sunday: 8:00 AM to 8:00 PM
+          </div>
+        </div>
+
+        <!-- Form Column -->
+        <div class="booking-form">
+          <form id="booking-form" onsubmit="handleFormSubmit(event)">
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="form-name">Full Name *</label>
+                <input type="text" id="form-name" class="form-control" placeholder="e.g. Rahul Sharma" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-phone">Phone / WhatsApp Number *</label>
+                <input type="tel" id="form-phone" class="form-control" placeholder="e.g. 09606338697" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="form-wing">Accommodation Wing *</label>
+                <select id="form-wing" class="form-control" required>
+                  <option value="Boys Section">Boys Section</option>
+                  <option value="Girls Section">Girls Section (Dedicated Lady Warden)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="form-sharing">Sharing Type *</label>
+                <select id="form-sharing" class="form-control" required>
+                  <option value="Double Sharing">Double Sharing (Popular)</option>
+                  <option value="Single Occupancy">Single Occupancy (Private)</option>
+                  <option value="Triple Sharing">Triple Sharing (Budget)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="form-date">Expected Move-in / Visit Date</label>
+              <input type="date" id="form-date" class="form-control">
+            </div>
+
+            <div class="form-group">
+              <label for="form-msg">Any Questions or Special Requests?</label>
+              <textarea id="form-msg" rows="3" class="form-control" placeholder="e.g. I am joining Acharya Institute next month. Need a room with good study table."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-gold" style="width: 100%; padding: 14px; font-size: 15px;">
+              💬 Send Booking Inquiry via WhatsApp
+            </button>
+            <p style="font-size: 11px; color: var(--text-muted); text-align: center; margin-top: 10px;">
+              Submitting opens WhatsApp with your pre-filled inquiry.
+            </p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 12: FOOTER
+       ========================================================================== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div>
+          <div class="brand-logo" style="margin-bottom: 14px;">
+            <div class="logo-crest">R</div>
+            <div class="brand-text">
+              <h2 style="font-family:'Cinzel',serif; font-size:18px; color:#FFF; margin:0;">ROYAL <span>PG</span></h2>
+              <p>Soladevanahalli, Bengaluru</p>
+            </div>
+          </div>
+          <!-- EDIT HERE: Footer address -->
+          <p style="line-height: 1.6; color: var(--text-muted);">
+            3rd Main Cottage Road, 5th Cross Rd, near Acharya Institute, near Sri Lakshmi Venkateswara Swami Devasthana, Achit Nagar, MSPP Colony, Soladevanahalli, Bengaluru, Karnataka 560107
+          </p>
+          <p style="margin-top: 12px; color: var(--gold-light); font-weight: 600;">
+            100% Separate Wings for Boys and Girls
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#rooms">Room Sharing &amp; Prices</a></li>
+            <li><a href="#amenities">Hostel Amenities</a></li>
+            <li><a href="#food">Weekly Food Timetable</a></li>
+            <li><a href="#gallery">Photo Gallery</a></li>
+            <li><a href="#rules">Rules &amp; Security Deposit</a></li>
+            <li><a href="#location">Location &amp; Directions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact &amp; Support</h4>
+          <!-- EDIT HERE: Footer Contact details -->
+          <ul class="footer-links">
+            <li>Phone: <a href="tel:+919606338697" style="color: var(--gold-primary);">+91 96063 38697</a></li>
+            <li>WhatsApp: <a href="https://wa.me/919606338697" style="color: #4ade80;">+91 96063 38697</a></li>
+            <li>Email: royalboysgirlspg@gmail.com</li>
+            <li>Plus Code: 3FRP+J5 Soladevanahalli</li>
+            <li>Near: Acharya Institute of Technology (350m)</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div style="border-top: 1px solid var(--border-dark); padding-top: 25px; text-align: center; font-size: 12px;">
+        <!-- EDIT HERE: Copyright year & name -->
+        © 2026 Royal Boys and Girls PG. All rights reserved. Soladevanahalli, Bengaluru, Karnataka 560107.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       FLOATING MOBILE ACTION BAR (CALL & WHATSAPP)
+       ========================================================================== -->
+  <div class="mobile-float-bar">
+    <!-- EDIT HERE: Mobile phone call button -->
+    <a href="tel:+919606338697" style="background: #1E293B; color: #FFF; border: 1px solid #334155;">
+      📞 Call PG
+    </a>
+    <!-- EDIT HERE: Mobile WhatsApp button -->
+    <a href="https://wa.me/919606338697?text=Hi%2C%20I'm%20interested%20in%20a%20room%20at%20Royal%20Boys%20and%20Girls%20PG" target="_blank" style="background: #25D366; color: #080E1A;">
+      💬 WhatsApp
+    </a>
+    <a href="#contact" class="btn-gold" style="color: #080E1A;">
+      📅 Book Visit
+    </a>
+  </div>
+
+  <!-- ==========================================================================
+       VANILLA JAVASCRIPT (ZERO DEPENDENCY, NO BUILD STEP)
+       ========================================================================== -->
+  <script>
+    // 1. Mobile Menu Toggle
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      if (menu.style.display === 'flex') {
+        menu.style.display = 'none';
+      } else {
+        menu.style.display = 'flex';
+      }
+    }
+
+    // 2. Switch Boys / Girls Room Tabs
+    function switchWing(wing) {
+      const boysSection = document.getElementById('wing-boys');
+      const girlsSection = document.getElementById('wing-girls');
+      const btnBoys = document.getElementById('btn-boys');
+      const btnGirls = document.getElementById('btn-girls');
+
+      if (wing === 'boys') {
+        boysSection.style.display = 'grid';
+        girlsSection.style.display = 'none';
+        btnBoys.classList.add('active');
+        btnGirls.classList.remove('active');
+      } else {
+        boysSection.style.display = 'none';
+        girlsSection.style.display = 'grid';
+        btnGirls.classList.add('active');
+        btnBoys.classList.remove('active');
+      }
+    }
+
+    // 3. Switch Food Timetable Days
+    function showMenuDay(dayCode, btnElement) {
+      // Hide all day menus
+      const dayMenus = document.querySelectorAll('.day-menu');
+      dayMenus.forEach(m => m.style.display = 'none');
+
+      // Show selected day menu
+      const selected = document.getElementById('menu-' + dayCode);
+      if (selected) {
+        selected.style.display = 'block';
+      }
+
+      // Update button active state
+      const buttons = document.querySelectorAll('.food-day-btn');
+      buttons.forEach(b => b.classList.remove('active'));
+      btnElement.classList.add('active');
+    }
+
+    // 4. Photo Gallery Filtering
+    function filterGallery(category, btnElement) {
+      const items = document.querySelectorAll('.gallery-item');
+      items.forEach(item => {
+        if (category === 'all' || item.getAttribute('data-category') === category) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+
+      const buttons = document.querySelectorAll('.filter-btn');
+      buttons.forEach(b => b.classList.remove('active'));
+      btnElement.classList.add('active');
+    }
+
+    // 5. Gallery Lightbox Modal
+    function openLightbox(imgSrc, captionText) {
+      const lightbox = document.getElementById('lightbox');
+      const img = document.getElementById('lightbox-img');
+      const caption = document.getElementById('lightbox-caption');
+      img.src = imgSrc;
+      caption.textContent = captionText;
+      lightbox.classList.add('active');
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('active');
+    }
+
+    // Close on Escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        closeLightbox();
+      }
+    });
+
+    // 6. Accordion toggle for Rules
+    function toggleAcc(headerElement) {
+      const parent = headerElement.parentElement;
+      const isOpen = parent.classList.contains('open');
+
+      // Close other accordion items
+      const allItems = document.querySelectorAll('.acc-item');
+      allItems.forEach(item => item.classList.remove('open'));
+
+      if (!isOpen) {
+        parent.classList.add('open');
+      }
+    }
+
+    // Supabase Backend Credentials
+    const SUPABASE_URL = "https://kiwpzxjdbcwkfafngdgj.supabase.co";
+    const SUPABASE_ANON_KEY = "sb_publishable_xm7uE87p3W55MfNzg1aLlw_KGhNNC-P";
+    let supabaseClient = null;
+    try {
+      if (window.supabase && typeof window.supabase.createClient === 'function') {
+        supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+      }
+    } catch (err) {
+      console.warn("Supabase init error:", err);
+    }
+
+    // 7. Contact / Booking Form -> Supabase Database + WhatsApp Redirection
+    async function handleFormSubmit(e) {
+      e.preventDefault();
+      
+      const name = document.getElementById('form-name').value.trim();
+      const phone = document.getElementById('form-phone').value.trim();
+      const wing = document.getElementById('form-wing').value;
+      const sharing = document.getElementById('form-sharing').value;
+      const moveIn = document.getElementById('form-date').value;
+      const message = document.getElementById('form-msg').value.trim();
+
+      if (!name || !phone) {
+        alert('Please fill in your name and phone number.');
+        return;
+      }
+
+      // Save automatically to Supabase database
+      if (supabaseClient) {
+        try {
+          const { error } = await supabaseClient.from('bookings').insert([{
+            full_name: name,
+            phone: phone,
+            section: wing,
+            sharing_type: sharing,
+            move_in_date: moveIn || null,
+            message: message,
+            status: 'new'
+          }]);
+          if (error) {
+            console.warn("Supabase insert notification:", error.message);
+          } else {
+            console.log("Booking successfully recorded in Supabase database!");
+          }
+        } catch (err) {
+          console.warn("Supabase request error:", err);
+        }
+      }
+
+      // Format WhatsApp message text
+      const msg = "*New Inquiry - Royal Boys & Girls PG*%0A" +
+                  "*Name:* " + encodeURIComponent(name) + "%0A" +
+                  "*Phone:* " + encodeURIComponent(phone) + "%0A" +
+                  "*Section:* " + encodeURIComponent(wing) + "%0A" +
+                  "*Room Type:* " + encodeURIComponent(sharing) + "%0A" +
+                  "*Date:* " + encodeURIComponent(moveIn || "Immediate / Flexible") + "%0A" +
+                  "*Message:* " + encodeURIComponent(message || "I want to visit the PG.");
+
+      // EDIT HERE: WhatsApp Number (919606338697)
+      const whatsappURL = "https://wa.me/919606338697?text=" + msg;
+      window.open(whatsappURL, '_blank');
+    }
+  </script>
+
+</body>
+</html>
